@@ -1,0 +1,68 @@
+FactorX Protocol White Paper
+Created by Jorge Cortes at MIT Bitcoin Expo 2024
+
+Category: Bitcoin-based Invoice Factoring & Liquidity Infrastructure
+Technologies: Bitcoin Lightning Network, Automation+ Chainlink Oracle Interop
+
+1. Introduction
+Small and medium-sized enterprises (SMEs) face persistent liquidity challenges due to delayed invoice payments, often waiting 30 to 90 days for settlements. Traditional factoring services offer a solution, but with high fees, slow turnaround times, and debt obligations that restrict growth. FactorX is a blockchain-based factoring protocol designed to eliminate these constraints.
+Built using Chainlink's decentralized oracle infrastructure and the Bitcoin Lightning Network, FactorX enables real-time invoice verification and instant liquidity without introducing debt. This protocol provides SMEs with a transparent, low-cost, and programmable solution for cash flow management.
+
+2. Problem Statement
+Delayed Liquidity: Payment cycles of 30-90+ days inhibit operational agility for SMEs.
+High Cost of Capital: Traditional factoring incurs fees ranging from 5% to 11%.
+Debt Dependence: Most liquidity options burden businesses with long-term financial obligations.
+Manual Verification & Fraud Risk: Lack of transparency in invoice legitimacy and payment terms.
+
+3. Solution Overview
+FactorX provides a decentralized factoring protocol that:
+Verifies invoices in real time using Chainlink Functions and external APIs (QuickBooks, Xero, SAP).
+Disburses capital immediately using Bitcoin Lightning Network payments.
+Utilizes smart contracts to automate invoice lifecycle management.
+Incentivizes early client payments with BTC rewards.
+Pools DeFi capital from liquidity providers to fund invoice advances.
+
+4. System Architecture
+
+4.1 Components
+Smart Contracts: Deployed on Ethereum-compatible chain for invoice registration, fund disbursement, and repayment tracking.
+Chainlink Functions: Authenticate invoice data and verify metadata via third-party APIs.
+Chainlink Automation: Monitor invoice due dates, trigger repayment or default logic.
+Lightning Network Node: Handles real-time BTC transfers.
+Liquidity Pool: Capital fund provided by DeFi investors.
+
+4.2 Workflow
+SME submits invoice (off-chain hash stored).
+Chainlink Functions validate invoice with external API.
+Smart contract determines eligible advance (e.g., 85%).
+Funds disbursed via Lightning Network.
+Chainlink Automation tracks due date.
+Upon payment, repayment returned to pool; BTC reward distributed if early.
+
+5. Tokenomics (Optional)
+FXG (Factor Governance Token)
+Role: Protocol governance, dispute resolution, rewards.
+Staking mechanism for underwriters and verifiers.
+Optional fee discounts for FXG holders.
+
+6. Compliance & Risk Management
+KYC/AML integration at onboarding layer.
+Audited smart contracts (external code review).
+Off-chain encrypted invoice metadata.
+Fraud risk mitigated via data triangulation and business credential validation.
+
+
+7. Market Opportunity
+Global factoring turnover exceeds $3 trillion annually.
+Europe and Asia dominate usage; massive opportunity in LATAM and Africa.
+Emerging demand for low-cost, trustless financing options.
+
+8. Roadmap
+Q1: MVP launch, Ethereum + Lightning Network integration.
+Q2: Partner onboarding, beta testing with SMEs.
+Q3: FXG token rollout, DeFi liquidity module.
+Q4: Expansion to Layer 2 and cross-chain deployment (via Chainlink CCIP).
+
+9. Conclusion
+FactorX is designed to decentralize and democratize cash flow access for SMEs globally. By leveraging Chainlink’s secure oracles and the Bitcoin Lightning Network’s speed and cost-efficiency, FactorX delivers programmable liquidity, reduces risk, and aligns incentives for all participants in the invoice value chain.
+FactorX redefines factoring—not as a financial service, but as a public protocol for global commerce.
